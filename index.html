@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="Description" content="Put your description here.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    body {
+      background-color: #ededed;
+    }
+  </style>
+  <title>bdm-carousel</title>
+</head>
+<body>
+    <bdm-carousel .selected=${selected}>
+      <bdm-carousel-slide slot="slides">
+        <p>Hello</p>
+        <img src="https://picsum.photos/id/237/200/300">
+        <button>Decline</button>
+      </bdm-carousel-slide>
+      <bdm-carousel-slide slot="slides">
+        <p>Goodbye</p>
+        <img src="https://picsum.photos/536/354">
+      </bdm-carousel-slide>
+      <bdm-carousel-slide slot="slides">
+        <p>Hello again</p>
+      </bdm-carousel-slide>
+    </bdm-carousel>
+
+  <script type="module" src="./src/bdm-carousel.js"></script>
+</body>
+
+</html>
